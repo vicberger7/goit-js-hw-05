@@ -1,6 +1,2 @@
-function checkForSpam(message) {
-    const normalizedMessage = message.toLowerCase();
-    return normalizedMessage.includes('spam') || normalizedMessage.includes('sale');
-}
-  
-
+const sortByDescendingFriendCount = (users) => 
+  users.toSorted((a, b) => b.friends.length - a.friends.length);
